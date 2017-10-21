@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,    
+        "sourceMap": true,
+        "module": "es2015",
+        "target": "es5",
+        "noImplicitReturns": true,
+        "moduleResolution": "node",
+        "lib": [ "dom", "es2015" ]
+    },
+    "compileOnSave": true
+}

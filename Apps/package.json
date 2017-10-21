@@ -1,0 +1,38 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "dependencies": {
+    "inversify": "^4.3.0",
+    "jquery": "^3.2.1",
+    "reflect-metadata": "^0.1.10",
+    "vue": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.2.13",
+    "@types/webpack-env": "^1.13.1",
+    "css-loader": "^0.28.7",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-sequence": "^0.4.6",
+    "html-loader": "^0.5.1",
+    "less-loader": "^4.0.5",
+    "source-map-loader": "^0.2.2",
+    "ts-loader": "^2.3.7",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "vue-class-component": "^6.0.0",
+    "vue-loader": "^13.3.0",
+    "vue-template-compiler": "^2.5.0",
+    "vue-ts-loader": "0.0.3",
+    "webpack": "^3.7.1",
+    "webpack-stream": "^4.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
