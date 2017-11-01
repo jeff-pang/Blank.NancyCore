@@ -21,6 +21,7 @@ namespace Blank.NancyCore.Core.NancyCustom
             var map = new Container(registry);
             var menuBuilder = map.GetInstance<IMenuBuilder>();
             container.Register<IMenuBuilder>(menuBuilder);
+
             pipelines.OnError += (ctx, ex) => {
 
                 string path = ctx.Request.Path;
