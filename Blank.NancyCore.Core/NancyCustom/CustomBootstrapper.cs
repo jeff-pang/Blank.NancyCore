@@ -22,6 +22,18 @@ namespace Blank.NancyCore.Core.NancyCustom
             var menuBuilder = map.GetInstance<IMenuBuilder>();
             container.Register<IMenuBuilder>(menuBuilder);
 
+            pipelines.BeforeRequest.AddItemToStartOfPipeline(ctx => {
+                var ep = ctx.Request.Path;
+                Log.Information("calling {endpoint}", ep);
+
+                return null;
+            });
+
+            pipelines.AfterRequest.AddItemToEndOfPipeline(ctx => {
+                var ep = ctx.Request.Path;
+                Log.Information("returning result to {endpoint}", ep);
+            });
+
             pipelines.OnError += (ctx, ex) => {
 
                 string path = ctx.Request.Path;
